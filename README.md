@@ -68,7 +68,7 @@ A **Sequential ANN model** is defined using **Keras**, with:
 - Output layer with **sigmoid activation** (for binary classification)  
 - **Adam optimizer** and **binary cross-entropy loss**  
 
-*Note: The ANN model requires `x_train` and `y_train`, which need to be defined first.*  
+
 
 ### **B. XGBoost Classifier**  
 
@@ -76,26 +76,4 @@ An **XGBoost Classifier** is defined with:
 - **Max Depth = 4**  
 - **Learning Rate = 0.1**  
 - **100 Trees (Estimators)**  
-
-*Note: The dataset must be preprocessed before training this model.*  
-
----
-
-## **5. Next Steps & Potential Improvements**  
-
-### **A. Data Preparation**  
-✅ **Data Splitting** – Use `train_test_split()` to split data into training and test sets.  
-✅ **Feature Scaling** – Apply `StandardScaler` or `MinMaxScaler` to numerical features (`Age`, `Fare`).  
-
-### **B. Model Training & Optimization**  
-✅ **Model Training & Evaluation** – Train ANN/XGBoost and evaluate using **accuracy, precision, recall, F1-score, and AUC-ROC**.  
-✅ **Hyperparameter Tuning** – Optimize parameters using `GridSearchCV` or `RandomizedSearchCV`.  
-✅ **Cross-Validation** – Use **k-fold cross-validation** to assess model robustness.  
-
-### **C. Further Enhancements**  
-✅ **Feature Selection** – Identify the most important features.  
-✅ **Handling Missing Cabin Data** – Use better imputation strategies.  
-✅ **Ensemble Learning** – Combine models for better accuracy.  
-✅ **More EDA** – Deep dive into correlations and additional visualizations.  
-✅ **Refine Age Banding** – Define meaningful age groups for better insights.  
 
